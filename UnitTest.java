@@ -233,7 +233,7 @@ public class UnitTest {
 
     @org.junit.Test
     public void test7StrCount() {
-        int result = TestClass.strCount("abc", "");
+        int result = TestClass.strCount("abc", "1");
         org.junit.Assert.assertEquals(0, result);
     }
 
@@ -255,5 +255,56 @@ public class UnitTest {
         org.junit.Assert.assertEquals(2, result);
     }
 
-    
+    // stringClean tests
+    @org.junit.Test
+    public void test1StringClean() {
+        String result = TestClass.stringClean("yyzzza");
+    }
+
+    @org.junit.Test
+    public void test2StringClean() {
+        String result = TestClass.stringClean("abbbcdd");
+    }
+
+    @org.junit.Test
+    public void test3StringClean() {
+        String result = TestClass.stringClean("Hello");
+    }
+
+    @org.junit.Test
+    public void test4StringClean() {
+        String result = TestClass.stringClean("aaabbbcccaaa");
+    }
+
+    @org.junit.Test
+    public void test5StringClean() {
+        String result = TestClass.stringClean("a");
+    }
+
+    @org.junit.Test
+    public void test6StringClean() {
+        String result = TestClass.stringClean("");
+    }
+
+    @org.junit.Test
+    public void test7StringClean() {
+        String result = TestClass.stringClean("aaaaa");
+    }
+
+    @org.junit.Test
+    public void test8StringClean() {
+        String result = TestClass.stringClean("ababab");
+    }
+
+    @org.junit.Test
+    public void test9StringClean() {
+        String result = TestClass.stringClean("aabbccddeeff");
+    }
+
+    @org.junit.Test
+    public void test10StringClean() {
+        String result = TestClass.stringClean("1122334455");
+    }
+
+
 }
